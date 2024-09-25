@@ -1,101 +1,80 @@
+'use client'
+
 import Image from "next/image";
+import React from "react";
+import petlogo from "@/assets/petlogo.png";
+import { FaWhatsapp } from 'react-icons/fa';
+
+const Card = ({ title, content }: { title: string; content: string }) => (
+    <div className="bg-orange-500 rounded-lg shadow-md p-6 m-4 max-w-sm">
+        <h2
+            className="text-2xl font-sans font-bold mb-2 text-white "
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)" }}
+        >
+            {title}
+        </h2>
+        <p className="text-white font-sans">{content}</p>
+    </div>
+);
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    const openWhatsApp = () => {
+        const phoneNumber = '5511972888081'; // Replace with your actual WhatsApp Business number
+        const message = 'Olá! Gostaria de saber mais sobre os produtos da Pet Sabor.';
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    };
+
+    return (
+        <div className="min-h-screen bg-slate-100 flex flex-col items-center justify-center p-8 pet-background ">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+                src={petlogo}
+                className="rounded-full"
+                alt="Pet Sabor Logo"
+                width={200}
+                height={200}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="flex flex-col w-full px-5 pt-5 items-center justify-center mb-12">
+                <div className="flex">
+                    <p className="text-5xl font-sans text-forest-green p-2 mr-3">
+                        Um
+                    </p>
+                    <p className="text-nowrap text-5xl font-sans font-bold rounded-xl bg-orange-500  text-white p-2">
+                        Novo Jeito
+                    </p>
+                </div>
+                <p className="text-5xl font-sans text-forest-green ">
+                    de cuidar dos seus pets.
+                </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center">
+                <Card
+                    title="Nossa Missão"
+                    content="Aqui na  Pet Sabor, nossa missão é proporcionar aos nossos clientes uma experiência única de sabor e qualidade, oferecendo uma ampla variedade de produtos de alta qualidade para animais de estimação."
+                />
+                <Card
+                    title="Nossos Produtos"
+                    content="Descubra nossa seleção de produtos de alta qualidade para animais de estimação. Desde rações balanceadas até acessórios e brinquedos, temos tudo o que seu amigo peludo precisa para uma vida feliz e saudável."
+                />
+            </div>
+            <div className="bg-orange-500 flex rounded-lg shadow-md p-1 m-4 max-w-sm">
+                
+                <button
+                onClick={openWhatsApp}
+                className="bg-forest-green flex items-center justify-center rounded-lg shadow-md p-6 m-4 max-w-sm hover:bg-green-700 transition-colors duration-300"
+            >
+                <FaWhatsapp className="text-white text-5xl" />
+                <span 
+                    className="text-center text-2xl font-sans text-orange-100"
+                    style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)" }}
+                >
+                    Fale Conosco no WhatsApp
+                </span>
+            </button>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
+
