@@ -3,20 +3,29 @@
 import Image from "next/image";
 import React from "react";
 import petlogo from "@/assets/petlogo.png";
+import dogcard from "@/assets/dogcard.png";
 import { FaWhatsapp } from 'react-icons/fa';
 
-const Card = ({ title, content }: { title: string; content: string }) => (
-    <div className="bg-orange-500 rounded-lg shadow-md p-6 m-4 max-w-sm">
+const Card = ({ title, content, image }: { title: string; content: string; image?: any }) => (
+    <div className="relative bg-orange-500 rounded-lg shadow-md p-6 m-4 max-w-sm">
+        {image && (
+            <Image
+                src={image}
+                alt="Card image"
+                className="absolute -top-[100px] left-14 transform -translate-x-1/2"
+                width={150}
+                height={150}
+            />
+        )}
         <h2
-            className="text-2xl font-sans font-bold mb-2 text-white "
+            className="text-2xl font-sans font-bold mb-2 text-white"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)" }}
         >
             {title}
         </h2>
-        <p className="text-white font-sans">{content}</p>
+        <p className="text-white text-lg text-pretty font-sans">{content}</p>
     </div>
 );
-
 export default function Home() {
 
     const openWhatsApp = () => {
@@ -35,7 +44,7 @@ export default function Home() {
                 width={200}
                 height={200}
             />
-            <div className="flex flex-col w-full px-5 pt-5 items-center justify-center mb-12">
+            <div className="flex flex-col w-full px-5 pt-5 items-center justify-center mb-24">
                 <div className="flex">
                     <p className="text-5xl font-sans text-forest-green p-2 mr-3">
                         Um
@@ -44,22 +53,25 @@ export default function Home() {
                         Novo Jeito
                     </p>
                 </div>
-                <p className="text-5xl font-sans text-forest-green ">
+                <p className="text-5xl text-center font-sans text-forest-green ">
                     de cuidar dos seus pets.
                 </p>
             </div>
 
             <div className="flex flex-wrap justify-center">
+                
                 <Card
                     title="Nossa Missão"
                     content="Aqui na  Pet Sabor, nossa missão é proporcionar aos nossos clientes uma experiência única de sabor e qualidade, oferecendo uma ampla variedade de produtos de alta qualidade para animais de estimação."
+                    image={dogcard}
                 />
+                
                 <Card
                     title="Nossos Produtos"
-                    content="Descubra nossa seleção de produtos de alta qualidade para animais de estimação. Desde rações balanceadas até acessórios e brinquedos, temos tudo o que seu amigo peludo precisa para uma vida feliz e saudável."
+                    content="Descubra nossa seleção de produtos de alta qualidade para animais de estimação. Desde rações balanceadas até acessórios e brinquedos!"
                 />
             </div>
-            <div className="bg-orange-500 flex rounded-lg shadow-md p-1 m-4 max-w-sm">
+            <div className="bg-orange-500 flex rounded-lg shadow-md p-0.5 my-5 max-w-sm">
                 
                 <button
                 onClick={openWhatsApp}
