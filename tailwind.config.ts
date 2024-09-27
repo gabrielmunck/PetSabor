@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "forest-green": "#228B22",
+        "forest-green": "#008601",
+        "pet-orange": "#ff8201"
       },
       fontFamily: {
         sans: ['Fredoka', 'sans-serif'],
