@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import petlogo from "@/assets/petlogo.png";
 import dogcard from "@/assets/dogcard.png";
 import Contact from "@/components/Contact";
+import DogsSection from "@/components/DogsSection";
 
 
 const Card = ({
@@ -67,6 +68,7 @@ export default function Home() {
                         content="Descubra nossa seleção de produtos de alta qualidade para seu cãozinho de pequeno porte. Nossos produtos são cuidadosamente selecionados para garantir a saúde e o bem-estar dos seus pets."
                     />
                 </div>
+                <DogsSection/>
                 <Contact/>
             </div>
         </div>
