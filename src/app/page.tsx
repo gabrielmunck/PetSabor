@@ -1,5 +1,6 @@
 "use client";
 
+import { StaticImageData } from "next/image";
 import Image from "next/image";
 import React from "react";
 import Header from "@/components/Header";
@@ -17,7 +18,7 @@ const Card = ({
 }: {
     title: string;
     content: string;
-    image?: any;
+    image?: StaticImageData;
 }) => (
     <>
         <Header />

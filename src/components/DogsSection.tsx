@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { StaticImageData } from "next/image";
 import Image from "next/image";
 import dog1 from "@/assets/dog1.png";
 import dog2 from "@/assets/dog2.png";
@@ -6,7 +7,7 @@ import dog3 from "@/assets/dog3.png";
 import dog4 from "@/assets/dog4.png";
 
 interface DogImage {
-    src: any;
+    src: StaticImageData;
     alt: string;
     comment: string;
 }
