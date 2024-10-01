@@ -25,7 +25,7 @@ export default function Contact() {
                 <div className="flex flex-col sm:flex-row justify-center items-center w-full">
                     <button
                         onClick={openWhatsApp}
-                        className="bg-forest-green w-[90%] flex items-center justify-center rounded-lg shadow-md p-4 m-2 hover:bg-green-700 transition-colors duration-300"
+                        className="bg-green-600 w-[90%] flex items-center justify-center rounded-lg shadow-md p-4 m-2 hover:bg-green-700 transition-colors duration-300"
                     >
                         <FaWhatsapp className="text-white text-3xl mr-2" />
                         <span

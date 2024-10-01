@@ -7,6 +7,7 @@ import petlogo from "@/assets/petlogo.png";
 import dogcard from "@/assets/dogcard.png";
 import Contact from "@/components/Contact";
 import DogsSection from "@/components/DogsSection";
+import Partners from "@/components/Partners";
 
 
 const Card = ({
@@ -31,7 +32,7 @@ const Card = ({
                 />
             )}
             <h2
-                className="text-2xl font-sans tracking-widest font-bold mb-2 text-white"
+                className="text-2xl font-sans text-center tracking-widest font-bold mb-4 text-white"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)" }}
             >
                 {title}
@@ -69,6 +70,7 @@ export default function Home() {
                     />
                 </div>
                 <DogsSection/>
+                <Partners/>
                 <Contact/>
             </div>
         </div>

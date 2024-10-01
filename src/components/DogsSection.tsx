@@ -31,8 +31,9 @@ const DogsSection: React.FC = () => {
 
     // stopPropagation para evitar que o evento de clique no modal também feche o modal
     return (
-        <div className="container mx-auto py-8">
-            <h2 className="text-3xl text-center font-bold text-gray-700 mb-4">Nossos clientes estão mais do que satisfeitos!</h2>
+        <div className="container mx-auto mb-6 py-8">
+            <h2 className="text-3xl text-center font-sans font-bold text-gray-700 mb-4">Nossos clientes estão mais do que satisfeitos!</h2>
+            <p className="text-gray-400 tracking-wider">Confira a opnião deles!</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {dogImages.map((image, index) => (
                     <div
@@ -68,14 +69,14 @@ const DogsSection: React.FC = () => {
                                 className="rounded-lg object-cover w-full h-full"
                             />
                         </div>
-                        <p className="mt-4 text-gray-700">
+                        <p className="mt-4 text-xl tracking-wide text-gray-700">
                             {selectedImage.comment}
                         </p>
                         <button
-                            className="mt-4 bg-forest-green text-white px-4 py-2 rounded hover:bg-pet-orange transition-colors duration-300"
+                            className="mt-4 bg-forest-green font-sans text-white px-4 py-2 rounded hover:bg-pet-orange transition-colors duration-300"
                             onClick={closeModal}
                         >
-                            Close
+                            Fechar
                         </button>
                     </div>
                 </div>
