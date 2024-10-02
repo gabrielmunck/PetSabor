@@ -71,7 +71,7 @@ const DogsSection: React.FC = () => {
                             />
                         </div>
                         <p className="mt-4 pl-1 text-xl tracking-wide text-gray-700">
-                            "{selectedImage.comment}"
+                            &quot;{selectedImage.comment}&quot;
                         </p>
                         <button
                             className="mt-4 bg-forest-green font-sans text-white px-4 py-2 rounded hover:bg-pet-orange transition-colors duration-300"
