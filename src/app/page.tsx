@@ -9,6 +9,7 @@ import dogcard from "@/assets/dogcard.png";
 import Contact from "@/components/Contact";
 import DogsSection from "@/components/DogsSection";
 import Partners from "@/components/Partners";
+import RedirectButton from "@/components/Forms";
 
 
 const Card = ({
@@ -71,6 +72,7 @@ export default function Home() {
                     />
                 </div>
                 <DogsSection/>
+                <RedirectButton url="https://www.instagram.com/opetsabor/" text="Peça já!" />
                 <Partners/>
                 <Contact/>
             </div>
