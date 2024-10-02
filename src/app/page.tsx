@@ -49,7 +49,7 @@ export default function Home() {
     
 
     return (
-        <div className="min-h-screen bg-slate-100 flex flex-col items-center justify-center mt-10 p-8 pet-background ">
+        <div id="Home" className="min-h-screen bg-slate-100 flex flex-col items-center justify-center mt-10 p-8 pet-background ">
             <div className="flex flex-col justify-center items-center max-w-5xl">
                 <Image
                     src={petlogo}

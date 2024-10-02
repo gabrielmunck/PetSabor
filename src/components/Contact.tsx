@@ -17,7 +17,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="flex flex-col items-center w-full">
+        <section id="Contato" className="flex flex-col items-center w-full">
             <div className="bg-pet-orange flex flex-col rounded-lg  shadow-md p-1 my-5 w-full">
                 <p className="flex w-ful items-center justify-center text-center font-sans text-lg sm:text-2xl">
                     Entre em contato agora para saber mais:
