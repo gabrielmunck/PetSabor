@@ -12,7 +12,7 @@ const QualityItem = ({ icon, title, description }: { icon: React.ReactNode, titl
 
 const Partners: React.FC = () => {
     return (
-        <div id="SobreNos">
+        <div >
             <section className="bg-forest-green rounded-lg py-12 px-8">
                 <div className="container mx-auto">
                     <h2 className="text-xl sm:text-3xl font-sans font-bold tracking-widest text-center mb-10">Por que escolher Pet Sabor?</h2>
