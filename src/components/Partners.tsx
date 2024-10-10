@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { FaStar, FaDog, FaLeaf, FaGift, FaPaw } from 'react-icons/fa';
-import { FaA } from 'react-icons/fa6';
+import { FaStar, FaDog, FaLeaf, FaGift, } from 'react-icons/fa';
 
 const QualityItem = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
     <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
@@ -41,15 +40,6 @@ const Partners: React.FC = () => {
                     </div>
                 </div>
             </section>
-            {/* <section>
-                <div className="container mx-auto py-12 px-8">
-                    <h2 className="text-2xl text-gray-700 sm:text-4xl font-sans font-bold tracking-widest text-center mb-8">Nossos Parceiros</h2>
-                    <div className='flex items-center justify-center'>
-                        <FaPaw className='text-5xl text-pet-orange mr-4'/> 
-                        <p className='text-black text-3xl'>La Vet Veterinaria / Cotia - SP</p>
-                    </div>
-                </div>
-            </section> */}
         </div>
     );
 };
