@@ -18,9 +18,9 @@ export default function Contact() {
 
     return (
         <section id="Contato" className="flex flex-col items-center w-full">
-            <div className="bg-pet-orange flex flex-col rounded-lg  shadow-md p-1 my-5 w-full">
-                <p className="flex w-ful items-center justify-center text-center font-sans text-lg sm:text-2xl">
-                    Entre em contato agora para saber mais:
+            <div className=" flex flex-col rounded-lg p-1 my-5 w-full">
+                <p className="flex w-ful items-center justify-center text-center font-sans text-gray-700 text-lg sm:text-3xl mb-4">
+                    Fale conosco:
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-full">
                     <button

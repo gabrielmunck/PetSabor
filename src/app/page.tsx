@@ -62,17 +62,17 @@ export default function Home() {
                 <div className="flex flex-wrap justify-center">
                     <Card
                         title="Nossa Missão"
-                        content="Aqui na  Pet Sabor, nossa missão é proporcionar aos nossos clientes uma experiência única de sabor e qualidade, oferecendo uma ampla variedade de produtos de alta qualidade para cães de pequeno porte."
+                        content="Aqui na Pet Sabor, Nossa missão é oferecer alimentação saudável e equilibrada para cães de pequeno porte, utilizando ingredientes 100% naturais e de alta qualidade."
                         image={dogcard}
                     />
 
                     <Card
                         title="Nossos Produtos"
-                        content="Descubra nossa seleção de produtos de alta qualidade para seu cãozinho de pequeno porte. Nossos produtos são cuidadosamente selecionados para garantir a saúde e o bem-estar dos seus pets."
+                        content="A Pet Sabor oferece uma linha exclusiva de alimentação natural para cachorros de pequeno porte, focando em ingredientes 100% naturais e nutritivos. Enviamos um kit degustação com sabores variados em porções congeladas no seu primeiro pedido, permitindo que seu cão explore diferentes sabores e texturas enquanto se refresca em dias quentes, promovendo enriquecimento ambiental."
                     />
                 </div>
                 <DogsSection/>
-                <RedirectButton url="https://docs.google.com/forms/d/1fUKcFcKJseYaMrz6fO_-2ZSDYQwtRoSR6jK8pFJA7yw/viewform?chromeless=1&edit_requested=true" text="Peça já!" />
+                <RedirectButton url="https://docs.google.com/forms/d/1fUKcFcKJseYaMrz6fO_-2ZSDYQwtRoSR6jK8pFJA7yw/viewform?chromeless=1&edit_requested=true" text="Quero conhecer!" />
                 <Partners/>
                 <Contact/>
             </div>
