@@ -72,7 +72,7 @@ export default function Home() {
                     />
                 </div>
                 <DogsSection/>
-                <RedirectButton url="https://www.instagram.com/opetsabor/" text="Peça já!" />
+                <RedirectButton url="https://docs.google.com/forms/d/1fUKcFcKJseYaMrz6fO_-2ZSDYQwtRoSR6jK8pFJA7yw/viewform?chromeless=1&edit_requested=true" text="Peça já!" />
                 <Partners/>
                 <Contact/>
             </div>

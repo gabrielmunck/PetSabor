@@ -7,7 +7,7 @@ interface RedirectButtonProps {
 
 const RedirectButton: React.FC<RedirectButtonProps> = ({ url, text }) => {
     const handleClick = () => {
-        window.open(url, "_blank", "noopener,noreferrer");
+        window.open(url, "_blank", "noopener,noreferrer"); // Quando chama o componente, ele vai abrir uma nova janela com a URL especificada no atributo "url".
     };
 
     return (

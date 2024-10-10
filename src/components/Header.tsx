@@ -34,14 +34,14 @@ const Header: React.FC = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const navItems = ["Home", "SobreNos", "Contato"];
+    const navItems = ["Home", "Sobre Nós", "Contato"];
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white text-forest-green shadow-md' : 'bg-forest-green text-white'}`}>
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Image src={petlogo} alt="Pet Sabor Logo" width={50} height={50} className="rounded-full"/>
                 <nav className="hidden md:flex space-x-6">
-                    {["Home", "SobreNos", "Contato"].map((section) => (
+                    {["Home", "Sobre Nós", "Contato"].map((section) => (
                         <button
                             key={section}
                             onClick={() => scrollToSection(section)}
