@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-pet-bg': "url('../assets/petsaborREAL.png')",
+      },
+      backgroundSize: {
+        'custom': '50%', 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
