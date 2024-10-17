@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Pet Sabor',
-  description: 'Delicious flavors for your furry friends',
+  description: 'O melhor sabor para seu cãozinho!',
 }
 
 export default function RootLayout({
