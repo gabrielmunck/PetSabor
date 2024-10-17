@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Pet Sabor
 
-First, run the development server:
+## Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Pet Sabor é uma aplicação web desenvolvida com Next.js, React, Tailwind e Typescript focada em oferecer alimentação saudável e equilibrada para cães de pequeno porte. O objetivo é proporcionar produtos de alta qualidade, utilizando ingredientes 100% naturais.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades Principais
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Apresentação da missão e produtos da Pet Sabor
+- Seção de depoimentos de clientes satisfeitos
+- Informações sobre os diferenciais da marca
+- Botões de contato direto via WhatsApp e Instagram
+- Formulário para entrar em contato e solicitar mais informações
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tecnologias Utilizadas
 
-## Learn More
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- React Icons
 
-To learn more about Next.js, take a look at the following resources:
+## Componentes Principais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Header
+Navegação principal do site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### DogsSection
+Exibe imagens e depoimentos de cães clientes.
 
-## Deploy on Vercel
+### Partners
+Apresenta os diferenciais da Pet Sabor.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact
+Botões para contato via WhatsApp e Instagram.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### RedirectButton
+Botão personalizado para redirecionamento.
+
+## Configuração do Tailwind
+
+O arquivo `tailwind.config.ts` contém configurações personalizadas, incluindo:
+
+- Cores customizadas (forest-green, pet-orange)
+- Fonte personalizada (Fredoka)
+- Imagem de fundo customizada
+
+## Como Executar o Projeto
+
+1. Clone o repositório
+2. Instale as dependências com `npm install`
+3. Execute o projeto em modo de desenvolvimento com `npm run dev`
+4. Acesse `http://localhost:3000` no seu navegador
+
+## Licença
+
+© 2024 Pet Sabor. Todos os direitos reservados.
