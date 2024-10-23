@@ -2,7 +2,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
     const openWhatsApp = () => {
-        const phoneNumber = "5511972888081";
+        const phoneNumber = "5511976139659";
         const message =
             "Olá! Gostaria de saber mais sobre os produtos da Pet Sabor.";
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
